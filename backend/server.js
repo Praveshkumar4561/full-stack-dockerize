@@ -17,6 +17,10 @@ app.get("/api/message", (req, res) => {
   res.json("message received successfully");
 });
 
+app.get("/api/greet", (req, res) => {
+  res.json("good morning sir");
+});
+
 app.listen(1700, "0.0.0.0", () => {
   console.log("server is running on port 1700");
 });
